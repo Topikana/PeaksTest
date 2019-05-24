@@ -1,0 +1,73 @@
+
+{% include '@App/base.html.twig' %}
+
+{{ dump(heros) }}
+{% for hero in heros %}
+    <div class="spinner-grow text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+
+    <table class="table table-striped table-light w-75 m-auto text-center table-bordered">
+        <thead>
+        <tr class="d-flex">
+            <th scope="col" class="col-2">Name</th>
+            <th scope="col"  class="col-3">Description</th>
+            <th scope="col"  class="col-3">Picture</th>
+            <th scope="col" class="col-1">Comics</th>
+            <th scope="col"  class="col-3">Comics titles</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="d-flex">
+            <th class="col-sm-2" scope="row">
+                <a href="{{ path('marvelHero', {'id' :  hero.id }) }}">{{ hero.name }}</a>
+            </th>
+            {% if hero.description is empty %}
+                <td class="col-sm-3">No description available</td>
+            {% else %}
+            <td class="col-sm-3">{{ hero.description }}</td>
+            {% endif %}
+            <td class="col-sm-3"><img  class="img-fluid img-thumbnail rounded-circle" style="width: 200px; height: 200px;" src="{{ hero.thumbnail.path }}.{{ hero.thumbnail.extension }}"></td>
+            <td class="col-sm-1">{{ hero.comics.available }}</td>
+            <td class="col-sm-3 ">
+                <ul class="">
+                    {% for comic in hero.comics.items|slice(0,3) %}
+                    <li class="">{{ comic.name }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+{% endfor %}
+    <nav aria-label="Page navigation example border">
+        <ul class="pagination justify-content-center mb-2 mt-5">
+            {% if offset != 100 %}
+            <li class="page-item">
+                <a class="page-link" href="{{ path('marvelList', {'offset' :  offset - 3 }) }}" aria-label="Previous">
+                    Previous
+                </a>
+            </li>
+            {% endif %}
+            {% if offset < 118 %}
+            <li class="page-item">
+                <a class="page-link" href="{{ path('marvelList', {'offset' : offset + 3 }) }}" aria-label="Next">
+                   Next
+                </a>
+            </li>
+            {% endif %}
+            {% if offset == 118 %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ path('marvelList', {'offset' : offset + 2 }) }}" aria-label="Next">
+                       Next
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+
+
+
+
+
+
