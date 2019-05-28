@@ -10,9 +10,6 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="favorites")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\FavoritesRepository")
  *
- * @Hateos\Route(
- *     "marvel"
- *      embedded = @Hateoas\Embedded("expr(service('app.marvel').getCurrent())")
  * )
  */
 class Favorites
@@ -46,6 +43,27 @@ class Favorites
      * @ORM\Column(name="path", type="string", length=255)
      */
     private $path;
+
+
+    /**
+     * @var string
+     * @ORM\Column(name="description", type="string", length=255)
+     */
+    private $description;
+
+
+
+    /**
+     * @var string
+     * @ORM\Column(name="comics_titles", type="string", length=255)
+     */
+    private $comicsTitles;
+
+    /**
+     * @var
+     * @ORM\Column(name="comics_available", type="string", length=255)
+     */
+    private $comicsAvailable;
 
 
     /**
@@ -129,4 +147,78 @@ class Favorites
     {
         return $this->path;
     }
+
+    /**
+     * Set description.
+     *
+     * @param string $description
+     *
+     * @return Favorites
+     */
+    public function setDescription($description)
+    {
+        $this->description= $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description.
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set comicsTitles.
+     *
+     * @param string $comicsTitles
+     *
+     * @return Favorites
+     */
+    public function setcomicsTitles($comicsTitles)
+    {
+        $this->comicsTitles= $comicsTitles;
+
+        return $this;
+    }
+
+    /**
+     * Get comicsTitles.
+     *
+     * @return string
+     */
+    public function getcomicsTitles()
+    {
+        return $this->comicsTitles;
+    }
+
+    /**
+     * Set comicsAvailable.
+     *
+     * @param int  $comicsAvailable
+     *
+     * @return Favorites
+     */
+    public function setComicsAvailable($comicsAvailable)
+    {
+        $this->comicsAvailable=  $comicsAvailable;
+
+        return $this;
+    }
+
+    /**
+     * Get comicsAvailable.
+     *
+     * @return int
+     */
+    public function getComicsAvailable()
+    {
+        return $this->comicsAvailable;
+    }
+
+
 }

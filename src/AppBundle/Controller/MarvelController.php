@@ -8,13 +8,13 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Favorites;
 use AppBundle\Marvel\Marvel;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
-
+use Symfony\Component\HttpFoundation\Request;
 
 
 class MarvelController extends Controller
@@ -43,8 +43,6 @@ class MarvelController extends Controller
         $data = $this->get('jms_serializer')->deserialize($body, 'array', 'json');
         $marvel = $data['data']['results'];
 
-
-
         return $this->render('@App/marvelList.html.twig',[
             'heros' => $marvel,
             'offset' => $offset,
@@ -59,52 +57,38 @@ class MarvelController extends Controller
      */
     public function persoCharacter($id){
 
-
-        $url = 'https://developer.marvel.com/v1/public/characters/'.$id;
+        $url = 'http://gateway.marvel.com//v1/public/characters/'.$id;
         $timestamp = time();
         $publicKey = $this->getParameter('api_public_key');
         $privateKey = $this->getParameter('api_private_key');
         $hash = md5($timestamp.$privateKey.$publicKey);
-        $limit = 0;
-        $offset = 0;
+        $limit = 20;
+        $offset = 100;
 
         $client = new Marvel($timestamp,$this->getParameter('api_public_key'),$this->getParameter('api_private_key'),
             $hash, $url, $limit, $offset);
 
         $body = $client->api();
-        dump($body);die;
 
         $data = $this->get('jms_serializer')->deserialize($body, 'array', 'json');
         $hero = $data['data']['results'];
 
-//
-//        $client = new Client();
-//        try {
-//            $response = $client->request('GET', 'https://developer.marvel.com/v1/public/characters/'.$id,[
-//                'query' => [
-//
-//
-//            ]
-//            ]);
-//
-//
-//        } catch (GuzzleException $e) {
-//
-//            }
-//
-//        $data = $this->get('jms_serializer')->deserialize($response, 'array', 'json');
-//        $hero = $data['data']['results'];
-//        dump($url);die;
-
-
         return $this->render('@App/marvelHero.html.twig',[
                     'hero'  => $hero
         ]);
+        }
+//
+        /**
+        * @Route("/marvelHero/favorite/{id}", name="favorite")
+        */
+        public function addFavorite($id){
 
 
-    }
+//        $favorite = new Favorites();
+//        $favorite->setIdHero($id);
+//        $path =
+//        $em = $this->getDoctrine()->
 
 
-
-
+        }
 }
