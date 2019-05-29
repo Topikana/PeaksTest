@@ -64,7 +64,7 @@
             {#{% endif %}#}
             {#{% endfor %}#}
 
-
+            <td class="col-sm-1">
             {#{% if favorites is empty %}#}
                 {{ form_start(form, {'action': path('marvelList'), 'method' : 'POST' }) }}
 
@@ -74,9 +74,9 @@
                 {{ form_widget(form.description, {'value' : hero.description}) }}
                 {#{{ form_widget(form.offset, {'value' : offset}) }}#}
 
-                <td class="col-sm-1"><button type="submit"><i class="far fa-star"></i></button></td>
+               <button type="submit"><i class="far fa-star"></i></button>
                 {{ form_end(form) }}
-
+            </td>
 
             {#{% endif %}#}
 

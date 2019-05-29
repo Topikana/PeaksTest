@@ -45,6 +45,9 @@ class MarvelController extends Controller
         $data = $this->get('jms_serializer')->deserialize($body, 'array', 'json');
         $marvel = $data['data']['results'];
 
+
+        // faire une boucle pour les formulaire aux nombre de ligne par page
+
         $favorite = new Favorites();
         $form = $this->createForm('AppBundle\Form\favoriteType', $favorite);
         $form->handleRequest($request);

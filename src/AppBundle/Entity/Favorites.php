@@ -165,23 +165,23 @@ class Favorites
         return $this->description;
     }
 
-
-    /**
-     * @return string
-     */
-    public function getOffset()
-    {
-        return $this->offset;
-    }
-
-
-    /**
-     * @param string $offset
-     */
-    public function setOffset($offset)
-    {
-        $this->offset = $offset;
-    }
+//
+//    /**
+//     * @return string
+//     */
+//    public function getOffset()
+//    {
+//        return $this->offset;
+//    }
+//
+//
+//    /**
+//     * @param string $offset
+//     */
+//    public function setOffset($offset)
+//    {
+//        $this->offset = $offset;
+//    }
 
 
 
