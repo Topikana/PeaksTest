@@ -13,7 +13,10 @@ parameters:
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: ~
-    mailer_password: ~
+    mailer_password: ~0
+
+    api_public_key: 'this is your public key'
+    api_private_key: 'this is your private key'
 
     # A secret key that's used to generate certain security-related tokens
     secret: ThisTokenIsNotSoSecretChangeIt

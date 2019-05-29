@@ -47,23 +47,16 @@ class Favorites
 
     /**
      * @var string
-     * @ORM\Column(name="description", type="string", length=255)
+     * @ORM\Column(name="description", type="string", length=255, nullable=true)
      */
     private $description;
 
 
-
     /**
      * @var string
-     * @ORM\Column(name="comics_titles", type="string", length=255)
+     * @ORM\Column(name="offset", type="string",  nullable=true)
      */
-    private $comicsTitles;
-
-    /**
-     * @var
-     * @ORM\Column(name="comics_available", type="string", length=255)
-     */
-    private $comicsAvailable;
+    private $offset;
 
 
     /**
@@ -172,53 +165,25 @@ class Favorites
         return $this->description;
     }
 
-    /**
-     * Set comicsTitles.
-     *
-     * @param string $comicsTitles
-     *
-     * @return Favorites
-     */
-    public function setcomicsTitles($comicsTitles)
-    {
-        $this->comicsTitles= $comicsTitles;
-
-        return $this;
-    }
 
     /**
-     * Get comicsTitles.
-     *
      * @return string
      */
-    public function getcomicsTitles()
+    public function getOffset()
     {
-        return $this->comicsTitles;
+        return $this->offset;
     }
+
 
     /**
-     * Set comicsAvailable.
-     *
-     * @param int  $comicsAvailable
-     *
-     * @return Favorites
+     * @param string $offset
      */
-    public function setComicsAvailable($comicsAvailable)
+    public function setOffset($offset)
     {
-        $this->comicsAvailable=  $comicsAvailable;
-
-        return $this;
+        $this->offset = $offset;
     }
 
-    /**
-     * Get comicsAvailable.
-     *
-     * @return int
-     */
-    public function getComicsAvailable()
-    {
-        return $this->comicsAvailable;
-    }
+
 
 
 }

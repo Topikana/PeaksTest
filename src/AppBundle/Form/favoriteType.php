@@ -9,8 +9,14 @@
 namespace AppBundle\Form;
 
 
-use Doctrine\DBAL\Types\TextType;
+
+
+
+
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\AbstractType;
+
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -19,11 +25,26 @@ class favoriteType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
 {
         $builder
-            ->add('idHero')
-            ->add('name', TextType::class)
-            ->add('description', TextType::class);
-//            ->add('co')
-
+            ->add('idHero', TextType::class, array(
+                'required' => false,
+                'attr' => array('style'=>'display:none;')
+            ))
+            ->add('name', TextType::class, array(
+                'required' => false,
+                 'attr' => array('style'=>'display:none;')
+            ))
+            ->add('description', TextType::class, array(
+                "required" => false,
+                 'attr' => array('style'=>'display:none;')
+            ))
+            ->add('path', TextType::class, array(
+                "required" => false,
+                 'attr' => array('style'=>'display:none;')
+            ));
+//            ->add('offset', IntegerType::class,  array(
+//            "required" => false,
+//            'attr' => array('style'=>'display:none;')
+//            ));
 
 }
 
@@ -33,5 +54,13 @@ class favoriteType extends AbstractType
            'data_class' => 'AppBundle\Entity\Favorites'
        ));
     }
+
+//    /**
+//     * {@inheritdoc}
+//     */
+//    public function getBlockPrefix()
+//    {
+//        return 'appbundle_favorite';
+//    }
 
 }

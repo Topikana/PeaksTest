@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c451e52b-b06e-4ae4-949a-78a5b0467aa0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Form/favoriteType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Entity/FavoritesTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/49060eb4-706d-4011-84e8-0fcebf587f9e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/49060eb4-706d-4011-84e8-0fcebf587f9e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/peaksApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/peaksApi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MarvelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MarvelController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Favorites.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Favorites.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/favoriteType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Form/favoriteType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/header_bootstrap_4.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/header_bootstrap_4.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/marvelHero.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/marvelHero.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/marvelList.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/marvelList.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,24 +39,33 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="marvel@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="marvel@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="marvel@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="marvel: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="marvel@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="marvel: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="favorites: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Marvel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Marvel/Marvel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="15">
               <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
             </state>
           </provider>
@@ -69,22 +74,42 @@
       <file leaf-file-name="MarvelController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MarvelController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="266">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="e#123#154#0#PHP" expanded="true" />
+                <element signature="e#2139#2166#0#PHP" expanded="true" />
+                <element signature="e#3350#3377#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="favoriteType.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="favorites" pinned="false" current-in-tab="false">
+        <entry file="das://49060eb4-706d-4011-84e8-0fcebf587f9e/schema/marvel/table/favorites">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml.dist" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="47" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="favoriteType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/favoriteType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="371">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding>
-                <element signature="e#118#151#0#PHP" expanded="true" />
+                <element signature="e#122#181#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,31 +118,24 @@
       <file leaf-file-name="marvelHero.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/marvelHero.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state>
+              <caret column="35" selection-start-column="35" selection-end-column="35" />
               <folding>
+                <element signature="e#12#31#0#Twig" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultControllerTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php">
+      <file leaf-file-name="marvelList.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/marvelList.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavoritesTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/AppBundle/Entity/FavoritesTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+            <state relative-caret-position="420">
+              <caret line="64" column="28" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
               <folding>
-                <element signature="e#124#155#0#PHP" expanded="true" />
+                <element signature="e#12#31#0#Twig" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,26 +144,20 @@
       <file leaf-file-name="Favorites.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Favorites.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3210">
-              <caret line="214" column="6" selection-start-line="214" selection-start-column="6" selection-end-line="214" selection-end-column="6" />
+            <state relative-caret-position="330">
+              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="57" selection-start-column="57" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="marvelList.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/marvelList.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            <state relative-caret-position="30">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+              <folding>
+                <element signature="e#554#587#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,17 +174,18 @@
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/header_bootstrap_4.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Marvel/Marvel.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/marvelHero.html.twig" />
         <option value="$PROJECT_DIR$/tests/AppBundle/Entity/FavoritesTest.php" />
         <option value="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/marvelList.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Favorites.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/header_bootstrap_4.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/marvelHero.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/favoriteType.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Favorites.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/MarvelController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/marvelList.html.twig" />
       </list>
     </option>
   </component>
@@ -264,17 +277,65 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1600" />
-    <option name="y" value="25" />
+    <option name="y" value="-2" />
     <option name="width" value="1600" />
-    <option name="height" value="810" />
+    <option name="height" value="1202" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="peaksApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peaksApi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peaksApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peaksApi" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peaksApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peaksApi" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peaksApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peaksApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peaksApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peaksApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peaksApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peaksApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peaksApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peaksApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -327,38 +388,61 @@
       <workItem from="1558962308014" duration="70000" />
       <workItem from="1558962577279" duration="5399000" />
       <workItem from="1559027578072" duration="1430000" />
-      <workItem from="1559044633161" duration="2023000" />
+      <workItem from="1559044633161" duration="2683000" />
+      <workItem from="1559114798589" duration="22599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92590000" />
+    <option name="totallyTimeSpent" value="115849000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1600" y="25" width="1600" height="810" extended-state="6" />
+    <frame x="0" y="-2" width="1600" height="1202" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3146718" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5006435" side_tool="true" weight="0.3293944" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18082368" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.493565" visible="true" weight="0.16931711" />
+      <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.4993565" weight="0.3293944" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3146718" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.18082368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.493565" visible="true" weight="0.4239291" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.4993565" weight="0.3293944" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3146718" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" weight="0.18082368" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.493565" visible="true" weight="0.2684752" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5006435" side_tool="true" weight="0.3293944" />
+      <window_info anchor="bottom" id="Database Console" order="12" sideWeight="0.4993565" weight="0.3293944" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -450,6 +534,8 @@
           <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding>
             <element signature="e#123#154#0#PHP" expanded="true" />
+            <element signature="e#2139#2166#0#PHP" expanded="true" />
+            <element signature="e#3350#3377#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -495,6 +581,8 @@
           <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
           <folding>
             <element signature="e#123#154#0#PHP" expanded="true" />
+            <element signature="e#2139#2166#0#PHP" expanded="true" />
+            <element signature="e#3350#3377#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,6 +643,8 @@
           <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
           <folding>
             <element signature="e#123#154#0#PHP" expanded="true" />
+            <element signature="e#2139#2166#0#PHP" expanded="true" />
+            <element signature="e#3350#3377#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -595,13 +685,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49060eb4-706d-4011-84e8-0fcebf587f9e/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -616,62 +699,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/header_bootstrap_4.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Marvel/Marvel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://49060eb4-706d-4011-84e8-0fcebf587f9e/schema/marvel/table/favorites">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="57" selection-start-column="57" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/marvelList.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Favorites.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3210">
-          <caret line="214" column="6" selection-start-line="214" selection-start-column="6" selection-end-line="214" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/AppBundle/Entity/FavoritesTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="360">
           <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
           <folding>
             <element signature="e#124#155#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -682,39 +723,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/marvelHero.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/header_bootstrap_4.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="165">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#554#587#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="270">
+          <caret line="18" column="47" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MarvelController.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Marvel/Marvel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="15">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/marvelHero.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
           <folding>
-            <element signature="e#123#154#0#PHP" expanded="true" />
+            <element signature="e#12#31#0#Twig" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/favoriteType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="371">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding>
-            <element signature="e#118#151#0#PHP" expanded="true" />
+            <element signature="e#122#181#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Favorites.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://49060eb4-706d-4011-84e8-0fcebf587f9e/schema/marvel/table/favorites">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MarvelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#123#154#0#PHP" expanded="true" />
+            <element signature="e#2139#2166#0#PHP" expanded="true" />
+            <element signature="e#3350#3377#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/marvelList.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="64" column="28" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+          <folding>
+            <element signature="e#12#31#0#Twig" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

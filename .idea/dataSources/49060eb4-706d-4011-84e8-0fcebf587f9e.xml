@@ -943,22 +943,15 @@
     <column id="234" parent="229" name="description">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="229" name="comics_titles">
+    <column id="235" parent="229" name="offset">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="236" parent="229" name="comics_available">
-      <Position>7</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="237" parent="229" name="PRIMARY">
+    <key id="236" parent="229" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

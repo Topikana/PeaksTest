@@ -1,16 +1,25 @@
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
+{% include '@App/base.html.twig' %}
+<div class="card w-50 m-auto" style="width: 18rem;">
+    <div class="mb-3"></div>
+    <img class="card-img-top img-fluid img-thumbnail rounded-circle m-auto" style="width: 200px; height: 200px;" src="{{ hero.0.thumbnail.path }}.{{ hero.0.thumbnail.extension }}" alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h3 class="card-title">{{ hero.0.name }}</h3>
+        {% if hero.0.description != '' %}
+            <p class="card-text">{{ hero.0.description }}</p>
+        {% else %}
+            <p class="card-text">No description available</p>
+        {% endif %}
+        <h5>Comics list :</h5>
+        <ul class="">
+            {% for comic in hero.0.comics.items %}
+                <li class="">{{ comic.name }}</li>
+            {% endfor %}
+        </ul>
+
     </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
-    <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+
+    <div class="card-body m-auto">
+        <a href="{{ path('marvelList') }}" class="card-link">Back to the list</a>
+        {#<a href="#" class="card-link">Another link</a>#}
     </div>
 </div>

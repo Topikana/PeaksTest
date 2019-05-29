@@ -12,6 +12,7 @@ use AppBundle\Entity\Favorites;
 use AppBundle\Marvel\Marvel;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -23,9 +24,10 @@ class MarvelController extends Controller
     /**
      * @Route("/{offset}", name="marvelList")
      * @throws \GuzzleHttp\Exception\GuzzleException
+     * @Method({"GET, POST"})
      *
      */
-    public function listCharacter($offset = 100){
+    public function listCharacter($offset = 100, Request $request){
 
         $timestamp =  time();
         $publicKey = $this->getParameter('api_public_key');
@@ -43,10 +45,56 @@ class MarvelController extends Controller
         $data = $this->get('jms_serializer')->deserialize($body, 'array', 'json');
         $marvel = $data['data']['results'];
 
+        $favorite = new Favorites();
+        $form = $this->createForm('AppBundle\Form\favoriteType', $favorite);
+        $form->handleRequest($request);
+
+        $favorites = $this->getDoctrine()->getRepository(Favorites::class)->findAll();
+//        dump($favorite);die;
+
+        if($form->isSubmitted() && $form->isValid())
+        {
+            $favorite = $form->getData();
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($favorite);
+            $em->flush($favorite);
+
+//            $offset = $favorite->getOffset();
+
+            return $this->redirectToRoute('marvelList', array(
+//                'offset' => $offset
+            ));
+            }
+
         return $this->render('@App/marvelList.html.twig',[
             'heros' => $marvel,
             'offset' => $offset,
+            'favorites' => $favorites,
+            'form' => $form->createView()
         ]);
+
+    }
+
+    /**
+     * @Route("/{offset}/{id}", name="deleteFavorite")
+     */
+    public function deleteFavorite($id, $offset){
+
+//        $hero = new Favorites();
+//        $hero->getIdHero()
+
+        $em = $this->getDoctrine()->getManager();
+        $hero = $id;
+        $favorite = $em->getRepository(Favorites::class)->findOneBy(['idHero' => $id]);
+
+        $em->remove($favorite);
+        $em->flush();
+
+        return $this->redirectToRoute('marvelList',  array(
+            'offset' => $offset
+            )
+        );
+
 
     }
 
@@ -73,22 +121,12 @@ class MarvelController extends Controller
         $data = $this->get('jms_serializer')->deserialize($body, 'array', 'json');
         $hero = $data['data']['results'];
 
+
+
         return $this->render('@App/marvelHero.html.twig',[
-                    'hero'  => $hero
+                    'hero'  => $hero,
         ]);
         }
-//
-        /**
-        * @Route("/marvelHero/favorite/{id}", name="favorite")
-        */
-        public function addFavorite($id){
 
 
-//        $favorite = new Favorites();
-//        $favorite->setIdHero($id);
-//        $path =
-//        $em = $this->getDoctrine()->
-
-
-        }
 }
