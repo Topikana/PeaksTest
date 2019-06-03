@@ -7,7 +7,7 @@ Create an account (https://developer.marvel.com/)
 
 Getting Started
 Make you sure you have php 7.2 in your system
-install dependencies with composer update
+install dependencies with composer install
 
 in your parameters.yml:
 enter yours database parameters (host, port, name, user,password)
