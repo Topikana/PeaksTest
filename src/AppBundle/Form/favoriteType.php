@@ -13,6 +13,7 @@ namespace AppBundle\Form;
 
 
 
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\AbstractType;
@@ -25,6 +26,21 @@ class favoriteType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
 {
         $builder
+//            ->add('idHero', CollectionType::class,[
+//                'entry_type' => TextType::class,
+//            ])
+//            ->add('name', CollectionType::class,[
+//                'entry_type' => TextType::class,
+//            ])
+//            ->add('description', CollectionType::class,[
+//                'entry_type' => TextType::class,
+//            ])
+//            ->add('path', CollectionType::class,[
+//                'entry_type' => TextType::class,
+//            ])
+//            ->add('offset', CollectionType::class,[
+//                'entry_type' => TextType::class,
+//            ]);
             ->add('idHero', TextType::class, array(
                 'required' => false,
                 'attr' => array('style'=>'display:none;')
@@ -40,11 +56,11 @@ class favoriteType extends AbstractType
             ->add('path', TextType::class, array(
                 "required" => false,
                  'attr' => array('style'=>'display:none;')
+            ))
+            ->add('offset', IntegerType::class,  array(
+            "required" => false,
+            'attr' => array('style'=>'display:none;')
             ));
-//            ->add('offset', IntegerType::class,  array(
-//            "required" => false,
-//            'attr' => array('style'=>'display:none;')
-//            ));
 
 }
 
