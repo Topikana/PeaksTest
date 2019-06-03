@@ -21,6 +21,12 @@ api_private_key
 run server
 php bin/console server:run
 
+To test this project with phpunit :
+
+composer require --dev symfony/phpunit-bridge
+to launch yours test 
+./vendor/bin/simple-phpunit
+
 Enjoy Marvel Heros.
 
 Build with
