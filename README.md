@@ -24,6 +24,7 @@ php bin/console server:run
 To test this project with phpunit :
 
 composer require --dev symfony/phpunit-bridge
+composer require --dev symfony/browser-kit symfony/css-selector
 to launch yours test 
 ./vendor/bin/simple-phpunit
 
